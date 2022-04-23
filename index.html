@@ -11,19 +11,23 @@
   </head>
   <body>
     <div id="container">
-      <img src="./assets/alessandro-sacchi-NUFnfYd09iI-unsplash.jpg" alt="" />
-      <img src="./assets/jamie-hagan-RWzPBcWVdpw-unsplash.jpg" alt="" />
-      <img src="./assets/renato-pozzi-G4oGYy_ZcsQ-unsplash.jpg" alt="" />
-      <img src="./assets/samuel-ferrara-1527pjeb6jg-unsplash.jpg" alt="" />
+      <div id="slider">
+        <img src="./assets/image-one.jpg" alt="mountain sunset" />
+        <img src="./assets/image-two.jpg" alt="mountain desert" />
+        <img src="./assets/image-three.jpg" alt="mountain lake" />
+        <img src="./assets/image-four.jpg" alt="mountain clouds" />
+      </div>
       <div id="nav">
-        <input type="radio" name="photo" id="first-button" value="" />
-        <input type="radio" name="photo" id="second-button" value="" />
-        <input type="radio" name="photo" id="third-button" value="" />
-        <input type="radio" name="photo" id="fourth-button" value="" />
-        <label for="first-button"></label>
-        <label for="second-button"></label>
-        <label for="third-button"></label>
-        <label for="fourth-button"></label>
+        <input type="radio" name="photo" id="first-input" value="" />
+        <input type="radio" name="photo" id="second-input" value="" />
+        <input type="radio" name="photo" id="third-input" value="" />
+        <input type="radio" name="photo" id="fourth-input" value="" />
+        <label for="first-input" id="first-button"
+          ><div class="selected"></div
+        ></label>
+        <label for="second-input" id="second-button"><div></div></label>
+        <label for="third-input" id="third-button"><div></div></label>
+        <label for="fourth-input" id="fourth-button"><div></div></label>
       </div>
     </div>
   </body>

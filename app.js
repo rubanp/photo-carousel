@@ -3,8 +3,8 @@ const width = container.offsetWidth;
 const height = container.offsetHeight;
 const images = document.querySelectorAll('img');
 const slider = document.querySelector('#slider');
-let currentImage = 1;
 const buttons = document.querySelectorAll('label');
+let current = 1;
 
 setImgDimensions();
 
@@ -42,8 +42,7 @@ function setImgDimensions() {
 }
 
 function moveSlider(buttonIndex) {
-  slider.style.transform = `translateX(-${
-    (buttonIndex - currentImage) * width
-  }px)`;
-  currentImage = buttonIndex;
+  const location = (buttonIndex - 1) * -1;
+  slider.style.transform = `translateX(${location * width}px)`;
+  current = buttonIndex;
 }
